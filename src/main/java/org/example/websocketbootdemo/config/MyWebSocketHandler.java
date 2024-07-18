@@ -27,6 +27,8 @@ public class MyWebSocketHandler extends TextWebSocketHandler {
         log.info("Disconnected: {}, CloseStatus: {}", session, status);
     }
 
+
+
     public void sendMessageToAll(String message) {
         for (WebSocketSession session : sessions) {
             try {
